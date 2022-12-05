@@ -1,0 +1,183 @@
+body {
+    font-family: 'Calibri';
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.firstPart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    width: 40%;
+    padding: 10px;
+}
+
+.row, .rowIcon {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.rowIcon {
+    width: 100%;
+}
+
+.cell, .cellIcon {
+    padding: 5px;
+    width: 50%;
+}
+
+.cellIcon {
+    width: 50%;
+}
+
+.cellIconHelp {
+    width: 100%;
+    font-size: 15px;
+    text-align: center;
+    padding: 4px;
+}
+
+.titleIcon {
+    font-weight: bold;
+    text-align: center;
+    padding: 5px;
+}
+
+.overIcons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.answer {
+    width: 40%;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+/* PREVIEW */
+
+.overClockface {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 25%;
+}
+
+.preview {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.clockface {
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 250px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 20px;
+    background-color: #000000;
+    color: #fefefe;
+}
+
+.titleQuestion {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.previewText {
+    width: 100%;
+    padding: 2px;
+}
+
+.previewIcons, .previewIcon {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.previewIcon {
+    width: 35%;
+    height: 60px;
+}
+
+.previewIconImage {
+    width: 40px;
+    height: 40px;
+    /* border: 1px solid white; */
+    border-radius: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.previewIconText {
+    width: 100%;
+}
+
+.iconIMG {
+    width: 30px;
+    height: 30px;
+}
+
+.actionsContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+.action {
+    margin-bottom: 5px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    position: relative;
+}
+
+.action::before, .action::after {
+	content: "";
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	border: 1px solid black;
+	transition: all .3s ease;
+}
+
+.action::before {
+	top: -2;
+	left: -2px;
+	border-width: 1px 0 0 1px;
+}
+
+.action::after {
+	bottom: -2px;
+	right: -2px;
+	border-width: 0 1px 1px 0;
+}
+
+.action:hover::before, .action:hover::after {
+	width: calc(100% + 1px);
+	height: calc(100% + 1px);
+}
+
+.imgAction {
+    width: 100%;
+}
